@@ -13,11 +13,8 @@ const App = () => {
     return (
         <AppProvider>
             <div className='container'>
-                <div className='mt-3' style={{display:'flex', justifyContent: 'space-between'}}>
-                    <h1 className='' style={{display:'flex'}}>Company's Budget Allocation</h1>
-                    <div className='' style={{float:'flex'}}>
-                        <Currency />
-                    </div>
+                <div className='mt-3'>
+                    <h1 className='' >Company's Budget Allocation</h1>                    
                 </div>
                 <div className='row mt-3'>
                     
@@ -29,6 +26,9 @@ const App = () => {
                     </div>
                     <div className='col-sm'>
                         <ExpenseTotal />
+                    </div>
+                    <div className='col-sm'>
+                        <Currency />
                     </div>
                 </div>
                 <h3 className='mt-3'>Allocation</h3>

@@ -26,7 +26,7 @@ const Currency = () => {
     return (
         <React.Fragment>
             <div className="alert alert-success" style={{ cursor: 'default', color:'black', userSelect:'none' }}   onClick={event=> setExpanded(!expanded)}>
-                <span>Currency: {currency}</span>
+                <span>Currency: ({getLongName(currency)})</span>
                 <FaCaretDown/>
                 {/* <TiArrowDown size='1.5em'  style={{ color: 'blue', fontSize: '24px' }}  onClick={event=> setExpanded(!expanded)}></TiArrowDown> */}
             </div>
